@@ -31,3 +31,5 @@ CREATE TABLE med_api.tb_patient(
     deleted_at TIMESTAMP,
     FOREIGN KEY (address_id) REFERENCES med_api.tb_address(id)
 );
+
+-- add column patient_id to tb_address as foreign key and constraint
