@@ -1,5 +1,6 @@
-package com.lightbringer.medapp.domain.person.patient;
+package com.lightbringer.medapp.domain.person.patient.repository;
 
+import com.lightbringer.medapp.domain.person.patient.Patient;
 import com.lightbringer.medapp.infra.exception.ValueNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

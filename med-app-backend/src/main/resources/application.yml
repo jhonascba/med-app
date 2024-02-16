@@ -8,8 +8,10 @@ spring:
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
-        hibernate:
-            ddl-auto: create
+                order_updates: true
+                order_inserts: true
+                ddl-auto: create
+                default-schema: med_api
         show-sql: true
     flyway:
         locations: classpath:db/migration

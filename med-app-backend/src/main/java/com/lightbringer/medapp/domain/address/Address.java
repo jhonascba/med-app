@@ -21,6 +21,10 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @OneToOne(mappedBy = "address")
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
+
     private String addressType;
     private String name;
     private String number;
@@ -28,9 +32,6 @@ public class Address {
     private String zipCode;
     private String state;
     private String city;
-
-    @OneToOne(mappedBy = "address")
-    private Patient patient;
 
     @CreationTimestamp
     protected LocalDateTime createdAt;

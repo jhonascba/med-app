@@ -1,6 +1,6 @@
 package com.lightbringer.medapp.controller;
 
-import com.lightbringer.medapp.domain.person.patient.PatientService;
+import com.lightbringer.medapp.domain.person.patient.service.PatientService;
 import com.lightbringer.medapp.domain.person.patient.dto.CreatePatientDTO;
 import com.lightbringer.medapp.domain.person.patient.dto.PatientDTO;
 import com.lightbringer.medapp.domain.person.patient.dto.UpdatePatientDTO;

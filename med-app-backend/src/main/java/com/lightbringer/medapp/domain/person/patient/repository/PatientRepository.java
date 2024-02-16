@@ -1,5 +1,6 @@
-package com.lightbringer.medapp.domain.person.patient;
+package com.lightbringer.medapp.domain.person.patient.repository;
 
+import com.lightbringer.medapp.domain.person.patient.Patient;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

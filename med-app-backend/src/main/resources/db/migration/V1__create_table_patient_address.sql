@@ -32,4 +32,8 @@ CREATE TABLE med_api.tb_patient(
     FOREIGN KEY (address_id) REFERENCES med_api.tb_address(id)
 );
 
--- add column patient_id to tb_address as foreign key and constraint
+ALTER TABLE tb_address ADD COLUMN patient_id BIGINT;
+
+ALTER TABLE tb_address
+ADD CONSTRAINT fk_tb_address_fk_patient
+FOREIGN KEY (patient_id) REFERENCES med_api.tb_patient;

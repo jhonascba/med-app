@@ -1,8 +1,12 @@
-package com.lightbringer.medapp.domain.person.patient;
+package com.lightbringer.medapp.domain.person.patient.service;
 
+import com.lightbringer.medapp.domain.person.DocumentType;
+import com.lightbringer.medapp.domain.person.patient.Patient;
+import com.lightbringer.medapp.domain.person.patient.ValidatePatient;
 import com.lightbringer.medapp.domain.person.patient.dto.CreatePatientDTO;
 import com.lightbringer.medapp.domain.person.patient.dto.PatientDTO;
 import com.lightbringer.medapp.domain.person.patient.dto.UpdatePatientDTO;
+import com.lightbringer.medapp.domain.person.patient.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

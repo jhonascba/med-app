@@ -1,5 +1,7 @@
 package com.lightbringer.medapp.domain.person.patient;
 
+import com.lightbringer.medapp.domain.person.DocumentType;
+import com.lightbringer.medapp.domain.person.patient.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;

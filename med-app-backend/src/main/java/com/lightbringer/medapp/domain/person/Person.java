@@ -30,8 +30,8 @@ public abstract class Person {
     protected String email;
     protected boolean active;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "address_id")
     protected Address address;
 
     protected String motherName;
