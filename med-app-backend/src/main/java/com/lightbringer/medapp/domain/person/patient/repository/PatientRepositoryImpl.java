@@ -7,8 +7,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
 @RequiredArgsConstructor
 public class PatientRepositoryImpl implements PatientRepository {
@@ -28,12 +26,12 @@ public class PatientRepositoryImpl implements PatientRepository {
     }
 
     @Override
-    public List<Patient> findByCpf(String cpf) {
+    public Patient findByCPF(String cpf) {
         return patientRepositoryJpa.findByCpf(cpf);
     }
 
     @Override
-    public List<Patient> findByRG(String rg) {
+    public Patient findByRG(String rg) {
         return patientRepositoryJpa.findByRG(rg);
     }
 
