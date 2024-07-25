@@ -1,22 +1,25 @@
 package com.lightbringer.medapp.domain.person.patient.dto;
 
 import com.lightbringer.medapp.domain.address.dto.UpdateAddressDTO;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 
 public record UpdatePatientDTO(
-        Long patientId,
-        String name,
-        String lastname,
-        LocalDate birthdate,
+        @NotNull Long patientId,
+        @NotBlank String name,
+        @NotBlank String lastname,
+        @NotNull LocalDate birthdate,
         String rg,
-        String motherName,
+        @NotBlank String motherName,
         String fatherName,
-        String phoneNumber1,
+        @NotBlank String phoneNumber1,
         String phoneNumber2,
         @Email String email,
-        boolean active,
-        UpdateAddressDTO address
+        @NotNull Boolean active,
+        @Valid UpdateAddressDTO address
 ){
 }

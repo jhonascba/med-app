@@ -3,7 +3,7 @@ CREATE TABLE med_api.tb_address(
     address_type VARCHAR(10) NOT NULL,
     name VARCHAR(25) NOT NULL,
     number VARCHAR(8) NOT NULL,
-    complement VARCHAR(20) NOT NULL,
+    complement VARCHAR(20),
     zip_code VARCHAR(10) NOT NULL,
     state VARCHAR(20) NOT NULL,
     city VARCHAR(20) NOT NULL,

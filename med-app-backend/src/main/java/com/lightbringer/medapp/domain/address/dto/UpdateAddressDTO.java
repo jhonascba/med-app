@@ -1,12 +1,14 @@
 package com.lightbringer.medapp.domain.address.dto;
 
+import jakarta.validation.constraints.NotBlank;
+
 public record UpdateAddressDTO(
-        String addressType,
-        String name,
-        String number,
+        @NotBlank String addressType,
+        @NotBlank String name,
+        @NotBlank String number,
         String complement,
-        String zipCode,
-        String state,
-        String city
+        @NotBlank String zipCode,
+        @NotBlank String state,
+        @NotBlank String city
 ) {
 }

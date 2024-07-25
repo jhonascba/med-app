@@ -1,6 +1,7 @@
 package com.lightbringer.medapp.domain.person.patient.dto;
 
 import com.lightbringer.medapp.domain.address.dto.CreateAddressDTO;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -19,7 +20,7 @@ public record CreatePatientDTO(
         @NotBlank String phoneNumber1,
         String phoneNumber2,
         @Email String email,
-        @NotNull boolean active,
-        CreateAddressDTO address
+        @NotNull Boolean active,
+        @Valid CreateAddressDTO address
 ){
 }
